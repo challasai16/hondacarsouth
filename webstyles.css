@@ -1,0 +1,459 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.hero {
+  background-image: url("honda-new-pc.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+
+}
+.contact-form {
+  background-color:#e8e8e8c2;
+  padding: 30px;
+  width: 35%;
+  position: absolute;
+  right: 3%;
+  top: 9%;
+  /*padding-top: 30px;*/
+
+}
+.contact-form h2 {
+    font-size: 20px;
+    padding: 10px 0;
+        color:black;
+    text-align: center;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 1px solid grey;
+}
+.contact-form form input::placeholder  {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-form form select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+.contact-form form select option {
+  padding: 20px;
+
+}
+.submit-form-btn {
+  background-color: #BE2132;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+.interior {
+   width: 100%;
+   text-align: center;
+   padding: 30px 0;
+   margin: 10px 0;
+}
+.interior h2 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+.interior-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+.interior-box {
+    width: 31%;
+    margin: 10px;
+}
+.interior-box img {
+    width: 100%;
+}
+
+ /* drive test */
+          
+.test .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 80px;
+        margin-bottom: 45px;
+    }
+
+    .test .inner-box {
+        flex: 1 1 auto;
+        max-width: 24%;      
+        border-radius: 0.5rem;
+        box-shadow: 1px 0rem 0.6rem 0 hsl(0deg 0% 77%);
+        background-color: hsla(0, 0%, 100%, .5);
+        padding: 1.7rem 1.4rem 2.2rem 2.2rem;
+        bottom: 0;
+        left: 50%;
+        overflow: hidden;
+        margin-right: 7px;
+        transition: all 1.2s ease;
+    }
+
+    .inner-box:hover {
+        transform: translateY(-15px);
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    button {
+        padding: 5px 25px;
+        margin-top: 15px;
+        border-radius: 10px;
+        background: red;
+        color: white;
+        font-size: 15px;
+        border: red;
+        font-family: 'Poppins';
+        font-weight: 600;
+        transition: all 1.2s ease;
+    }
+
+    button:hover {
+        transform: scale(1.2);
+    }
+    
+    .btn button {
+    cursor: pointer;
+}
+
+/*animation video*/
+
+  .animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:2rem;
+  }
+  .video {
+    margin-top: 20px;
+  }
+  .video-list ul {
+    display: flex;
+}
+.video-list ul li {
+    list-style: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
+    cursor:pointer;
+    transition:all 1.2s ease;
+}
+
+.video-list {
+      border: 1px solid;
+    border-radius: 5px;
+    background: #00000054;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left:19.5rem;
+    z-index: 1000;
+ 
+   
+}
+li.active {
+    color: red!important;
+        transform: scale(0.9);
+}
+
+video {
+     width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+    border-radius: 25px;
+}
+
+section.sec-footer {
+    background: #e8e8e8;
+}
+
+.inner-sec {
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+}
+.icons {
+    display: flex;
+    padding-top:5px;
+}
+.icons img {
+    height:5vh;
+    object-fit: cover;
+    padding-right: 1rem;
+}
+.inner-sec h3,p{
+    font-family: 'Poppins';
+}
+.inner-sec h3
+{
+    padding-bottom:10px;
+}
+.inner-sec p {
+    padding-right: 10px;
+}
+.footer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0px;
+}
+
+.footer img.footer-log {
+    width:90% !important;
+    /*padding-top:3px;*/
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    list-style: none;
+}
+.footer ul li img {
+    width: 100%;
+    height: 5vh;
+    object-fit: cover;
+    padding-right: 1.5rem;
+}
+
+/*header*/
+
+.left img {
+    width: 100%;
+    object-fit: cover;
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left {
+    width: 30%;
+}
+.right {
+    width: 60%;
+    text-align: right;
+}
+.main-header{
+        width: 85%;
+    margin: 0 auto;
+}
+
+.sticky-header {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+ transition: transform 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
+  
+}
+.sticky-header.active {
+    position: fixed;
+    background:white;
+    border-bottom: 1px solid #0000006e;
+    transform: translateY(0);
+}
+
+.right ul li {
+    list-style: none;
+}
+.right ul li a {
+    color: #BE2132;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.right ul li a:hover{
+    cursor:pointer;
+}
+i.fa-solid.fa-star {
+    color: #BE2132;
+    font-size: 0.5rem !important;
+    position: absolute;
+    right: 44px;
+    z-index: 99;
+}
+i.fa-solid.fa-star.first {
+    top: 6.2rem;
+}
+i.fa-solid.fa-star.second {
+    top: 10.1rem;
+}
+i.fa-solid.fa-star.third {
+    top: 14rem;
+}
+
+/*mobile query*/
+
+/*@media only screen and (min-width:320px)*/
+/*	and (max-width:768px){*/
+@media only screen and (max-width: 768px) {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden!important;
+}
+
+body {
+    overflow-x: hidden!important;
+}
+.left {
+    width:55%;
+}
+.right {
+    width:45%;
+    padding-top: 5px;
+}
+.right ul li a {
+    font-size: 10px;
+    text-align: right;
+}
+
+.sticky-header {
+    position: relative;
+}
+.sticky-header.active {
+    padding: 10px 0px;
+}
+
+.contact-form.aos-init.aos-animate {
+        width: 90%;
+        top: 115%;
+        background-color: white;
+        box-shadow: 1px 1px 3px 3px #0000002e;
+        left: 5%;
+        padding-top: 0px !important;
+}
+    
+.hero {
+        background-image: url("hond-new-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.test {
+    margin-top: 38rem;
+}
+   
+.test .container {
+    display: flex;
+    width:100%!important;
+    margin-top: 8rem!important;
+    margin-bottom:20px!important;
+}
+
+.test .inner-box {
+    min-width: 90%;
+    margin: 5px auto;
+}
+.video-list {
+    position: absolute;
+    left: 40px;
+    min-width: 75%;
+    margin: 0 auto;
+    overflow: scroll;
+    z-index: 1000;
+}
+.video-list ul li {
+      list-style: none;
+    padding: 4px;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 1.2s ease;
+}
+.image img {
+    width: 100%;
+}
+.text h2, p{
+    text-align: center;
+}
+
+ .btn a {
+            display: block;
+            text-align: center; 
+        }
+        .footer {
+    display: block;
+}
+.inner-sec {
+    width: 100%;
+}
+.footer img.footer-log {
+    width: 70%;
+    /*padding-top:0.7rem;*/
+}
+.inner-sec h3 {
+    padding-bottom: 0px;
+    padding-top: 2rem;
+    text-align: left;
+}
+.inner-sec p {
+    padding-right: 10px;
+    text-align: left;
+}
+.icons {
+    
+    padding-top:0px;
+}
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 100%;
+}
+.left img {
+    width: 100%;
+    object-fit: cover;
+    padding-top: 10px;
+}
+    
+}
+
+/*mac css*/
+@media only screen and (min-width: 3051px) {
+/*@media only screen and (min-width: 2560px) and (min-height: 1600px) {*/
+.hero {
+ height: 90vh;
+}
+
+}

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mad-Works</title>
+
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .main {
+        text-align: center;
+      }
+      h1 {
+        color: white;
+        font-family: math;
+        text-align: center;
+        font-size: 3rem;
+      }
+      h1 span {
+        color: red;
+      }
+
+      ul li {
+        color: red;
+        font-family: math;
+        border: 1px solid red;
+        border-radius: 50%;
+        padding: 3rem;
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        list-style: none;
+      }
+
+      /* Mobile view */
+
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Hey, how are you <span>Feeling</span> today ?</h1>
+      <ul>
+        <li><a href="next.html">Powerful</a></li>
+        <li><a href="next.html">Excited</a></li>
+        <li><a href="next.html">Curious</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-top: -146px
+          
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 49px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: -14px;
+        }
+
+        /* Apply styles directly to the text */
+        label {
+            font-size: 21px;
+            display: inline-block;
+            /* Display labels in a row */
+            margin-right: 20px;
+            /* Add some right margin for spacing */
+            color: white;
+            /* Text color */
+        }
+
+        input[type="checkbox"] {
+            appearance: none;
+            /* Remove default checkbox styles */
+            width: 19px;
+            height: 19px;
+            border: 2px solid red;
+
+            background-color: black;
+
+            border-radius: 50%;
+
+            display: inline-block;
+
+            vertical-align: middle;
+
+            margin-right: 5px;
+
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: red;
+            /* Change background color when checked */
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            label {
+                margin-right: 0;
+                /* Reset right margin for smaller screens */
+                margin-bottom: 10px;
+                /* Add some bottom margin for spacing */
+                display: block;
+                /* Display labels in a column for small screens */
+            }
+        }
+
+        .checkbox-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.checkbox-link:hover {
+    /* Optional: Define hover color */
+    color: red; /* Change color on hover if needed */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <!-- Your content goes here -->
+        <h1>We like briyani, beaches, and <span class="red-text">helping you out</span></h1>
+        <h2>What can we help <span class="red-text">you </span>with?</h2>
+        <label>
+            <a href="mainhome.html" class="checkbox-link">
+                <input type="checkbox" name="graphicDesignCheckbox" value="Graphic Design"> Graphic Design
+            </a>
+        </label>
+        <label>
+            <a href="mainhome.html" class="checkbox-link">
+                <input type="checkbox" name="webDesignCheckbox" value="Web Design"> Web Design
+            </a>
+        </label>
+        <label>
+            <a href="mainhome.html" class="checkbox-link">
+                <input type="checkbox" name="brandingCheckbox" value="Branding"> Branding
+            </a>
+        </label>
+    </div>
+</body>
+
+</html>

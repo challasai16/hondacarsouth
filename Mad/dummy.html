@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  
+</head>
+<style>
+ 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --primary-color: #9C6FF4;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  display: block;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1.4;
+  overflow-x: hidden;
+  font-family: 'Playfair Display', serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  overflow: hidden;
+} 
+
+
+.lenis {
+  &.lenis-smooth {
+    scroll-behavior: auto;
+
+    [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+  }
+
+  &.lenis-stopped {
+    overflow: hidden;
+  }
+
+  &.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
+
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+header,
+.container {
+  max-width: 94vw;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3vw;
+  margin-right: -3vw;
+
+  .col {
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+    &.lg-6 {
+      width: calc(50% - 6vw);
+    }
+  }
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2vw;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--bg-color);
+  mix-blend-mode: difference;
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .burger {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      display: inline-block;
+      width: 3vw;
+      height: 0.4vw;
+      background-color: var(--bg-color);
+      margin-bottom: 0.5vw;
+    }
+  }
+}
+
+
+.intro {
+  padding: 10vw 0;
+}
+
+
+.about {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transform: scale(0.9);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    opacity: 0;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .service {
+      display: inline-block;
+      background-color: var(--bg-color);
+      padding: 1.5vw 3vw;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 9999px;
+      margin-bottom: 2vw;
+      cursor: pointer;
+      transition: background-color .3s ease-out, color .3s ease-out;
+      opacity: 0;
+      
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+      }
+      
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+}
+
+
+.cta {
+  padding: 10vw 0;
+}
+</style>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <button type="button" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <section class="section intro">
+    <div class="container">
+      <h1>Transform Your Space: The <i>Art</i> of Stucco Decor</h1>
+    </div>
+  </section>
+  <section class="section about">
+    <div class="about__img">
+      <img src="https://images.unsplash.com/photo-1433574466251-fe1be0d9b3d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col lg-6">
+          <div class="about__text">
+            <h2>About the company</h2>
+            <p>Discover the elegance of stucco decor with our blend of traditional craftsmanship and modern design. Transform walls, ceilings, and architectural elements into captivating focal points in any room.</p>
+            <p>We prioritize detail, superior workmanship, and personalized service. Our stucco specialists collaborate with clients, ensuring a seamless experience from consultation to completion.</p>
+          </div>
+        </div>
+        <div class="col lg-6">
+          <div class="services">
+            <div class="service">
+              Custom Stucco Designs
+            </div>
+            <div class="service">
+              Stucco Restoration and Repair
+            </div>
+            <div class="service">
+              Decorative Stucco Finishes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section cta">
+    <div class="container">
+      <h2>
+        Unleash Your Style: Distinctive Stucco Decor for Every Space
+      </h2>
+      <p> Uncover the transformative power of stucco decor and breathe new life into your interiors. Our team combines expertise and artistry to create visually striking, long-lasting stucco finishes that complement your personal style and enhance your living spaces.
+      </p>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+  <script>
+ gsap.registerPlugin(ScrollTrigger);
+
+const lenis = new Lenis({
+  lerp: 0.07
+});
+
+lenis.on('scroll', ScrollTrigger.update)
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+// Intro text
+const introSection = document.querySelector('.section.intro');
+if (introSection) {
+  gsap.to(introSection, {
+    yPercent: 100,
+    scale: 0.9,
+    opacity: 0,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: introSection,
+      start: 'top top',
+      end: 'bottom top',
+      scrub: true
+    }
+  });
+}
+
+// About
+const aboutSection = document.querySelector('.section.about');
+const aboutImg = aboutSection.querySelector('.about__img');
+const aboutText = aboutSection.querySelector('.about__text');
+const aboutServices = aboutSection.querySelectorAll('.about .service');
+
+
+
+gsap.to(aboutImg, {
+  scale: 1,
+  ease: 'none',
+  scrollTrigger: {
+    trigger: aboutSection,
+    start: 'top center',
+    end: 'bottom bottom',
+    scrub: true
+  }
+});
+
+const aboutTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: aboutSection,
+    start: 'top top',
+    end: () => `+=${window.innerHeight * 3}px`,
+    scrub: true,
+    pin: true
+  }
+});
+
+aboutTl.to(aboutText, {
+  opacity: 1,
+  duration: 1,
+  ease: 'none'
+});
+
+aboutTl.to(aboutServices, {
+  opacity: 1,
+  duration: 1,
+  ease: 'none',
+  stagger: 0.5
+})
+
+// CTA
+const ctaContainer = document.querySelector('.cta .container');
+gsap.from(ctaContainer, {
+  opacity: 0,
+  yPercent: 100,
+  scrollTrigger: {
+    trigger: '.cta',
+    markers: true,
+    start: 'top bottom',
+    end: 'bottom bottom',
+    scrub: true
+  }
+})
+
+
+
+  </script>
+</body>
+</html>

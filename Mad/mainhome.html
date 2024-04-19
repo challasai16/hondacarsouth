@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Your description">
+  <meta name="author" content="Your name">
+
+  <meta property="og:site_name" content="" />
+  <meta property="og:site" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="css/swiper.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon  -->
+  <!-- Add your favicon link here -->
+
+  <style>
+    header {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      color: #283618;
+    }
+
+
+    h1 {
+      font-size: clamp(3rem, 3vw + 1rem, 7rem);
+      text-transform: uppercase;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      color: white;
+      font-family: 'Tangerine', serif;
+      font-size: 48px;
+    }
+
+    .char {
+      transform: translateY(115px);
+      transition: transform 0.5s;
+    }
+
+    body {
+      background-color: #000000;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #2F2F31;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2F2F31;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2F2F31;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+    <div class="container">
+
+      <!-- Image Logo -->
+      <a class="navbar-brand logo-image" href="index.html"><img src="https://www.madworks.in/media/mad-works-logo.svg"
+          alt="alternative"></a>
+
+      <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+              aria-expanded="false">Drop</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <canvas id="waves" style="margin-left: -30rem;"></canvas>
+    <div style="margin-top: -26rem;
+        text-align: center;">
+      <h1 id="my_text">
+        We
+        <span class="red-text">Create Value</span>
+      </h1>
+      <h1>
+        & Remove Noise
+      </h1>
+    </div>
+    <svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+  </header>
+
+
+
+
+  <main>
+    <section class="slides-nav">
+      <nav class="slides-nav__nav">
+        <button class="slides-nav__prev js-prev sbtn">Prev</button>
+        <button class="slides-nav__next js-next sbtn">Next</button>
+      </nav>
+    </section>
+    <section class="slides">
+
+
+
+      <section class="slide is-active">
+        <div class="slide__content">
+          <div class="mod-det">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+          </div>
+          <header class="slide__header">
+            <h2 class="slide__title">
+              <span class="title-line" style="color: red;"><span>Why</span></span>
+              <span class="title-line"><span>Mad Works</span></span>
+            </h2>
+            <!-- <iframe class="ifcls" src="https://www.youtube.com/embed/iol8n3m88SA">
+                           </iframe> -->
+          </header>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="slide__content">
+          <div class="mod-det">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+          </div>
+          <header class="slide__header">
+            <h2 class="slide__title">
+              <span class="title-line" style="color: red;"><span>User</span></span>
+              <span class="title-line"><span>The King</span></span>
+            </h2>
+            <!-- <iframe class="ifcls" src="https://www.youtube.com/embed/xFe_ZYtfsZg">
+                           </iframe> -->
+          </header>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="slide__content">
+          <div class="mod-det">
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage.</p>
+          </div>
+          <header class="slide__header">
+            <h2 class="slide__title">
+              <span class="title-line" style="color: red;"><span>Admin</span></span>
+              <span class="title-line"><span>The controller</span></span>
+            </h2>
+            <!-- <iframe class="ifcls" src="https://www.youtube.com/embed/Cz8wCc36GDA">
+                           </iframe> -->
+          </header>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+
+  <div id="services" class="basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="image-containers">
+            <img class="img-fluids" src="images/services-1.jpg" alt="alternative">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-containers">
+            <img class="img-fluids" src="images/services-2.jpg" alt="alternative">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-containers">
+            <img class="img-fluids" src="images/services-3.jpg" alt="alternative">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-containers">
+            <img class="img-fluids" src="images/services-1.jpg" alt="alternative">
+          </div>
+        </div>
+
+      </div>
+      <a class="read-more no-line green explore-link" href="article.html">
+        Explore more projects <span class="fas fa-long-arrow-alt-right"></span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+  <div>
+    <section>
+      <div class="containert">
+        <headers class="sectiont-headers">
+          <h1 class="sectiont-title">Our Team</h1>
+          <p></p>
+        </headers>
+        <ul class="team">
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Javier Bates</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Stacey Cooper</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/84.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Celina Ross</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Bradley Pierce</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/73.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Heidi Carpenter</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Jeremy Weaver</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Jeanette Harvey</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/27.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Gary Bryant</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Sherry Richardson</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Hugh Brooks</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/women/96.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Irene Ward</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Edgar Dunn</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Shawn Fernandez</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+          <li class="team__members">
+            <div class="userProfile">
+              <figure class="userProfile__thumbnail">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Photo" class="userProfile__image">
+              </figure>
+
+            </div>
+            <div class="team__details">
+              <headers class="team__meta">
+                <h3 class="team__meta__title">Micheal Snyder</h3>
+                <div class="team__meta__designation">Software Developer</div>
+              </headers>
+              <div class="team__details__summery">
+                After experiencing various highs and lows in our
+                entrepreneurial journey, we have now established
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="wrap">
+    <headers class="sectionlo-headers">
+      <h1 class="sectionlo-title">Our Clients</h1>
+      <p></p>
+    </headers>
+    <ul class="clients">
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/google.svg" alt="Google"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/airbnb.svg" alt="Airbnb"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/apple.svg" alt="Apple"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/microsoft.svg" alt="Microsoft"></a></li>
+    </ul>
+      <ul class="clients">
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/google.svg" alt="Google"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/airbnb.svg" alt="Airbnb"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/apple.svg" alt="Apple"></a></li>
+      <li><a href=""><img src="https://webslides.tv/static/images/logos/microsoft.svg" alt="Microsoft"></a></li>
+    </ul>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="h2-heading" style="margin-bottom: -4rem;
+            margin-left: 17rem;
+            font-size: 38px;
+            line-height: 1.5;
+            font-weight: 800;">What’s Happening in </br>
+        <span class="red-text">Design Globally</span>
+      </h2>
+    </div> <!-- end of col -->
+  </div> <!-- end of row -->
+
+  <!-- Services 1 -->
+  <div id="services" class="basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="image-container">
+            <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+          </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-5">
+          <div class="text-container">
+            <h2>Photo shooting and image editing services</h2>
+            <p>who eat she defective applauded departure joy. Get dissimilar not introduced day her
+              apartment Fully as taste he mr do smile abode every. Luckily we have words offered article
+              led</p>
+            <a class="read-more no-line green" href="article.html">Learn more <span
+                class="fas fa-long-arrow-alt-right"></span></a>
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of basic-1 -->
+  <!-- end of services 1 -->
+
+
+  <!-- Services 2 -->
+  <div class="basic-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="image-container">
+            <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
+          </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-5">
+          <div class="text-container">
+            <h2>Video production and editing services</h2>
+            <p>Smile abode every. Luckily offered article led lasting country minutes nor old. Happen people
+              things oh is oppose up parish effect. Law hands old outweigh humoured far appetite</p>
+            <a class="read-more no-line green" href="article.html">Learn more <span
+                class="fas fa-long-arrow-alt-right"></span></a>
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of basic-2 -->
+  <!-- end of services 2 -->
+
+
+  <!-- Services 3 -->
+  <div class="basic-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="image-container">
+            <img class="img-fluid" src="images/services-3.jpg" alt="alternative">
+          </div> <!-- end of image-container -->
+        </div> <!-- end of col -->
+        <div class="col-lg-5">
+          <div class="text-container">
+            <h2>Digital illustration and animation service</h2>
+            <p>Am if number no up period regard sudden better. Decisively surrounded all admiration and not
+              you. Out particular sympathize not favourable introduced insipidity but ham rather</p>
+            <a class="read-more no-line green" href="article.html">Learn more <span
+                class="fas fa-long-arrow-alt-right"></span></a>
+          </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of basic-3 -->
+  <!-- end of services 3 -->
+
+
+  <div class="wrapper">
+    <div class="containersl">
+      <input type="radio" name="slide" id="c1" checked>
+      <label for="c1" class="cardsl">
+        <div class="row">
+          <div class="icon">1</div>
+          <div class="description">
+            <h4>Winter</h4>
+            <p>Winter has so much to offer -
+              creative activities</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c2">
+      <label for="c2" class="cardsl">
+        <div class="row">
+          <div class="icon">2</div>
+          <div class="description">
+            <h4>Digital Technology</h4>
+            <p>Gets better every day -
+              stay tuned</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c3">
+      <label for="c3" class="cardsl">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="description">
+            <h4>Globalization</h4>
+            <p>Help people all over the world</p>
+          </div>
+        </div>
+      </label>
+      <input type="radio" name="slide" id="c4">
+      <label for="c4" class="cardsl">
+        <div class="row">
+          <div class="icon">4</div>
+          <div class="description">
+            <h4>New technologies</h4>
+            <p>Space engineering becomes
+              more and more advanced</p>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="cursor"></div>
+  <div class="cursor cursor2"></div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-col first">
+            <h6>About Mad Work</h6>
+            <p class="p-small">He oppose at thrown desire of no. Announcing impression unaffected day his
+              are unreserved indulgence. Him hard find read are you</p>
+          </div> <!-- end of footer-col -->
+          <div class="footer-col second">
+            <h6>Links</h6>
+            <ul class="list-unstyled li-space-lg p-small">
+              <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy
+                  Policy</a></li>
+              <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+              <li>Menu: <a href="#header">Home</a>, <a href="#services">Services</a>, <a href="#projects">Projects</a>,
+                <a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- end of footer-col -->
+          <div class="footer-col third">
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </a>
+            </span>
+            <!-- <p class="p-small">We would love to hear from you 
+                          <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p> -->
+          </div> <!-- end of footer-col -->
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of footer -->
+  <!-- end of footer -->
+
+
+
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+        </div>
+      </div>
+      <!-- <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Distributed by:  <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
+                </div> 
+            </div>  -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script> -->
+  </script>
+
+  <!-- Header -->
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://unpkg.com/gsap@3.9.0"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="mainhome.js"></script>
+  <script src="scroll.js"></script>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
